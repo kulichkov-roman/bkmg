@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta http-equiv="Content-Type" content="text/html;" />
 	<meta name="cmsmagazine" content="38d2170328e981e4d60ee986faaa509f" />
 
 	<?$APPLICATION->ShowHead();?>
@@ -147,7 +147,7 @@
 	"PAGER_TEMPLATE" => ".default",
 	"DISPLAY_TOP_PAGER" => "N",
 	"DISPLAY_BOTTOM_PAGER" => "Y",
-	"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+	"PAGER_TITLE" => "???????",
 	"PAGER_SHOW_ALWAYS" => "Y",
 	"PAGER_DESC_NUMBERING" => "N",
 	"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -169,16 +169,16 @@
         <div class="wrapper-1">
             <div class="sign-1">
                 <div class="num_2"></div>
-                <p>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ</p>
+                <p>Доставленных букетов</p>
             </div>
 
             <div class="sign-2">
                  <div class="num_3"></div>
-                <p>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅcпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</p>
+                <p>Возвращаютcя к нам снова</p>
             </div>
             <div class="sign-3">
                  <div class="num_1"></div>
-                <p>пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ</p>
+                <p>Лет на рынке</p>
             </div>
         </div>
     </section>
@@ -247,7 +247,7 @@
 	"PAGER_TEMPLATE" => ".default",
 	"DISPLAY_TOP_PAGER" => "N",
 	"DISPLAY_BOTTOM_PAGER" => "Y",
-	"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅ",
+	"PAGER_TITLE" => "??????",
 	"PAGER_SHOW_ALWAYS" => "Y",
 	"PAGER_DESC_NUMBERING" => "N",
 	"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -258,22 +258,37 @@
 	false
 );?>
 </section>
-    
-    <section class="about-short">
-      <div class="container">
-    	<div class="icon_adv mrg"><img src="<?=SITE_TEMPLATE_PATH?>/images/icon_1.png" /> пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ<br> пїЅпїЅпїЅпїЅпїЅ</div>
-        <div class="icon_adv mrg"><img src="<?=SITE_TEMPLATE_PATH?>/images/icon_2.png" /> пїЅпїЅпїЅпїЅпїЅcпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ<br> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</div>
-        <div class="icon_adv mrg"><img src="<?=SITE_TEMPLATE_PATH?>/images/icon_3.png" /> пїЅпїЅпїЅпїЅпїЅпїЅ<br> пїЅпїЅпїЅпїЅ</div>
-        <div class="icon_adv mrg"><img src="<?=SITE_TEMPLATE_PATH?>/images/icon_4.png" /> пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ<br> пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ</div>
-        <div class="icon_adv"><img src="<?=SITE_TEMPLATE_PATH?>/images/icon_5.png" /> пїЅпїЅпїЅпїЅпїЅпїЅ<br> пїЅпїЅпїЅпїЅпїЅпїЅ</div>    
-      </div>  
-    </section>
+
+	<section class="about-short">
+		<div class="container">
+			<div class="icon_adv mrg"><img
+					src="<?=SITE_TEMPLATE_PATH?>/images/icon_1.png"/>  Всегда свежие
+				цветы
+			</div>
+			<div class="icon_adv mrg"><img
+					src="<?=SITE_TEMPLATE_PATH?>/images/icon_2.png"/>
+				Профеcсиональные<br> флористы
+			</div>
+			<div class="icon_adv mrg"><img
+					src="<?=SITE_TEMPLATE_PATH?>/images/icon_3.png"/> Низкие<br>
+				цены
+			</div>
+			<div class="icon_adv mrg"><img
+					src="<?=SITE_TEMPLATE_PATH?>/images/icon_4.png"/> Доставка на дом
+				<br> или в офис
+			</div>
+			<div class="icon_adv"><img
+					src="<?=SITE_TEMPLATE_PATH?>/images/icon_5.png"/> Сисема<br>
+				скидок
+			</div>
+		</div>
+	</section>
 
 
 
     <section class="about">
         <div class="container">
-            <div class="h-block"> <div class="h-left"></div><h2>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ</h2><div class="h-right"></div> </div>
+            <div class="h-block"> <div class="h-left"></div><h2>Немного о нас</h2><div class="h-right"></div> </div>
             <div class="clearfix"></div>
              <p>  
             <?
@@ -289,7 +304,7 @@
     <section class="how-buy">
         <div class="about-bot-bg"></div>
         <div class="wrapper-1">
-            <div class="h-block"> <div class="h-left"></div><h2>пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ?</h2><div class="h-right"></div> </div>
+            <div class="h-block"> <div class="h-left"></div><h2>Как купить букет?</h2><div class="h-right"></div> </div>
 
             <div class="clearfix"></div>
            
@@ -336,7 +351,7 @@
 		 <section class="reviews">
 
          <div class="wrapper-1">
-            <div class="h-block"> <div class="h-left"></div><h2>пїЅпїЅпїЅпїЅпїЅпїЅ</h2><div class="h-right"></div> </div>
+            <div class="h-block"> <div class="h-left"></div><h2>Все отзывы</h2><div class="h-right"></div> </div>
 
             <div class="clearfix"></div>
 						<? $APPLICATION->IncludeComponent(
@@ -381,7 +396,7 @@
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+		"PAGER_TITLE" => "???????",
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
