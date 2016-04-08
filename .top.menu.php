@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Главная", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Каталог", 
+		"catalog.php?SECTION_ID=7", 
+		Array("catalog.php"), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Наши работы", 
+		"catalog.php?SECTION_ID=15", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		"action.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"reviews.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"contact.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

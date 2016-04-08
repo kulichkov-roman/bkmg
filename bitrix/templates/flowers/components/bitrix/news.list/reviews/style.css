@@ -1,0 +1,12 @@
+.review-item a{ color:#b880d8; font-size:16px;  }
+.review-item .aRew{  display:block; width:120px; height:120px; margin:0 auto; margin-bottom:20px; }
+
+.review-item .aRew img{ width:120px; height:120px; border:2px solid #84d3d3; border-radius: 160px 160px 160px 160px; - webkit-border-radius: 160px 160px 160px 160px; -moz-border-radius: 160px 160px 160px 160px; }
+
+.all{ font-size: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #2bb8b8;
+    text-decoration: underline; cursor:pointer;
+	 margin-top:20px; display:block; }
+.all:hover{ text-decoration:none;  }

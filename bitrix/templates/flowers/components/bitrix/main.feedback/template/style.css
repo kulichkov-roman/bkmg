@@ -1,0 +1,9 @@
+div.mfeedback {}
+div.mf-name, div.mf-email, div.mf-captcha, div.mf-message {  padding-bottom:10px;}
+div.mf-name input, div.mf-email input { padding-left:10px; width:490px; height:43px; border:1px solid #ebebeb; }
+div.mf-message textarea { padding-left:10px; width:490px; border:1px solid #ebebeb; }
+span.mf-req {color:red;}
+
+div.mf-ok-text {color:green; font-weight:bold; padding-bottom: 1em;}
+.submit{ font-family:Arial; font-size:12px; text-transform:uppercase;  width: 134px; height: 31px; border: 2px solid #c7a8d9; display: block; color: #a37eb8; -moz-border-radius: 20px; /* закругление для старых Mozilla Firefox */ -webkit-border-radius: 20px; /* закругление для старых Chrome и Safari */ -khtml-border-radius: 20px; /* закругл. для браузера Konquerer системы Linux */ border-radius: 20px; /* закругление углов для всех, кто понимает */ background:#FFFFFF; cursor:pointer; float:right;  }
+.submit:hover { background: #c7a8d9; color: white; }

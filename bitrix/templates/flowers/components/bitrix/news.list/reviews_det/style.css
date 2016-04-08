@@ -1,0 +1,12 @@
+
+
+.review-item{ padding:20px 0px 20px 0px; border-top:1px solid #ebebeb;  overflow:hidden; }
+
+.review-item a{ color:#b880d8; font-size:16px;  }
+.review-item .rDet{  width:120px; height:120px; margin:0 auto; margin-bottom:20px;  float: left;  margin-right:20px; }
+
+.review-item .rDet img{ width:120px; height:120px; border:2px solid #84d3d3; border-radius: 160px 160px 160px 160px; - webkit-border-radius: 160px 160px 160px 160px; -moz-border-radius: 160px 160px 160px 160px;  }
+
+.all{ color:#84d3d3; margin-top:20px; display:block; }
+
+.re{ color:#2bb8b8; margin-top:5px; margin-bottom:5px; display:block; font-weight:bold; }
