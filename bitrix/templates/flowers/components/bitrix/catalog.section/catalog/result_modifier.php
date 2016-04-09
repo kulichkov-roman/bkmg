@@ -1,6 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-//Make all properties present in order
-//to prevent html table corruption
+
 foreach($arResult["ITEMS"] as $key => $arElement)
 {
 	$arRes = array();

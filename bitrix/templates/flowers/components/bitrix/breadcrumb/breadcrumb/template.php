@@ -25,9 +25,9 @@ for($index = 0, $itemSize = $num_items; $index < $itemSize; $index++)
 	else
 	{
 		if(htmlspecialcharsbx($_GET["set_filter"]) <> ''){
-			$strReturn .= '<li class="breadcrumbs__item"><a class="breadcrumbs__item" href="'.$arResult[$index]["LINK"].'" title="'.$title.'">'.$title.'</a></li>';
+			$strReturn .= '<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="'.$arResult[$index]["LINK"].'" title="'.$title.'">'.$title.'</a></li>';
 		} else {
-			$strReturn .= '<li class="breadcrumbs__item"><a class="breadcrumbs__item" href="javascript:void(0)">'.$title.'</a></li>';
+			$strReturn .= '<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="javascript:void(0)">'.$title.'</a></li>';
 		}
 	}
 }

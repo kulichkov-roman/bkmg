@@ -1,10 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Доставка цветов по магнитогорску");
+$APPLICATION->SetTitle("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 ?><div class="catalog-menu clearfix">
 	<div class="container">
 		 <? if ($_REQUEST["SECTION_ID"] == "15"): ?>
-			<h1>Наши работы</h1>
+			<h1>пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</h1>
 		 <? else: ?>
 		 <?$APPLICATION->IncludeComponent(
 	"bitrix:menu",
@@ -24,17 +24,8 @@ $APPLICATION->SetTitle("Доставка цветов по магнитогорску");
 );?> <? endif;?>
 	</div>
 </div>
-<div class="breadcrumbs container">
-	<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
-	"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
-		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
-		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
-	),
-	false
-);?>
-</div>
 <div class="catalog container clearfix">
-	 <?$APPLICATION->IncludeComponent(
+<?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	"catalog",
 	Array(
@@ -73,7 +64,7 @@ $APPLICATION->SetTitle("Доставка цветов по магнитогорску");
 		"PAGER_SHOW_ALL" => "Y",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "Товары",
+		"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅ",
 		"PAGE_ELEMENT_COUNT" => "500",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"PRICE_CODE" => array(),
