@@ -1,0 +1,62 @@
+Options -Indexes
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+    php_flag allow_call_time_pass_reference 1
+    php_flag session.use_trans_sid off
+    php_flag register_globals off
+    php_flag allow_url_fopen Off
+    php_flag display_errors Off
+    php_value mbstring.func_overload 2
+    php_value display_errors 1
+    php_value mbstring.internal_encoding UTF-8
+    php_value max_input_vars 10000
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=10
+  RewriteRule ^.*$ /catalog/bukety_iz_konfet/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=13
+  RewriteRule ^.*$ /catalog/svadebnaya_floristika/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=12
+  RewriteRule ^.*$ /catalog/komnatnye_rasteniya/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=8
+  RewriteRule ^.*$ /catalog/kompozitsii/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=11
+  RewriteRule ^.*$ /catalog/tsvety/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=7
+  RewriteRule ^.*$ /catalog/bukety/? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^SECTION_ID=9
+  RewriteRule ^.*$ /catalog/podarki/? [R=301,L]
+  
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"
+</IfModule>
+
+
+
