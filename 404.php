@@ -8,14 +8,10 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("404 Not Found");
 
-$APPLICATION->IncludeComponent("bitrix:main.map", "map", Array(
-	"LEVEL" => "3",	// Максимальный уровень вложенности (0 - без вложенности)
-		"COL_NUM" => "2",	// Количество колонок
-		"SHOW_DESCRIPTION" => "Y",	// Показывать описания
-		"SET_TITLE" => "Y",	// Устанавливать заголовок страницы
-		"CACHE_TIME" => "3600",	// Время кеширования (сек.)
-	),
-	false
-);
+?>
+<div class="catalog container clearfix">
+	Страница, к которой Вы обратились, не существует. Возможно, был неправильно набран адрес страницы или Ссылка, по которой Вы перешли на сайт, уже не существует!
+</div>
+<?
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
