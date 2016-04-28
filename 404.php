@@ -7,11 +7,22 @@ CHTTP::SetStatus("404 Not Found");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("404 Not Found");
-
 ?>
 <div class="catalog container clearfix">
 	Страница, к которой Вы обратились, не существует. Возможно, был неправильно набран адрес страницы или Ссылка, по которой Вы перешли на сайт, уже не существует!
+	<?
+	$APPLICATION->IncludeComponent(
+		"bitrix:main.map",
+		"map",
+		Array(
+			"LEVEL" => "3",
+			"COL_NUM" => "2",
+			"SHOW_DESCRIPTION" => "Y",
+			"SET_TITLE" => "Y",
+			"CACHE_TIME" => "3600",
+		),
+		false
+	);
+	?>
 </div>
-<?
-
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
