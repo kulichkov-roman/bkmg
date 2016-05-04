@@ -139,4 +139,36 @@ $this->setFrameMode(true);
 		),
 		$component
 	);?>
+	<?
+	$arSort = array(
+		'SORT'=>'ASC'
+	);
+	$arSelect = array(
+		'ID',
+		'NAME',
+	    'DETAIL_TEXT'
+	);
+	$arFilter = array(
+		'IBLOCK_ID' => 5,
+		'NAME' => $APPLICATION->GetCurDir()
+	);
+
+	$rsElements = CIBlockElement::GetList(
+		$arSort,
+		$arFilter,
+		false,
+		false,
+		$arSelect
+	);
+
+	if ($arItem = $rsElements->GetNext())
+	{
+		if($arItem['DETAIL_TEXT'])
+		?>
+		<div class="catalog container clearfix">
+			<?=$arItem['DETAIL_TEXT'];?>
+		</div>
+		<?
+	}
+	?>
 </div>
